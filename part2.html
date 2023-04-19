@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="parent">
+    <div class="child1">
+      <div class="grandchild1">
+        Hello, jQuery!
+      </div>
+    </div>
+    <div class="child2">
+      <div class="grandchild2">
+        How are you?
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // .children() 메소드를 사용하여 parent 요소의 직계 자식 요소(child1, child2)를 선택
+    var children = $('.parent').children();
+    children.css('border', '1px solid red');
+
+    // .find() 메소드를 사용하여 parent 요소의 모든 하위 요소(grandchild1, grandchild2)를 선택
+    var find = $('.parent').find('*');
+    find.css('background-color', 'yellow');
+  </script>
+</body>
+</html>
