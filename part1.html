@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="grandparent">
+    <div class="parent">
+      <div class="child">
+        Hello, jQuery!
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // .parent() 메소드를 사용하여 child 요소의 부모(parent) 요소를 선택
+    var parent = $('.child').parent();
+    parent.css('border', '1px solid red');
+
+    // .parents() 메소드를 사용하여 child 요소의 모든 부모 요소를 선택
+    var parents = $('.child').parents();
+    parents.css('background-color', 'yellow');
+  </script>
+
+  </script>
+</body>
+</html>
